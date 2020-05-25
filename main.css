@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    padding: 0px;
+    margin:0px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#tophead{
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#graphtitle{
+    margin-left: auto;
+}
+
+#graphcont{
+    background-color: white;
+    height: 600px;
+    width: 900px;
+}
+
+#botfoot{
+    background-color: #eee;
+    height: 38px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gdata {
+    width: 120px;
+}
+
+.gi {
+    color: #333;
+}
