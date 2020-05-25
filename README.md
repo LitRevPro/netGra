@@ -36,6 +36,6 @@ As long as you are still in the project directory, all you need to do is...
 
 That's it.
 
-If you've set it up properly (and you have a properly formatted graph) is should look like this.
+If you've set it up properly (and you have a properly formatted graph) it should look like this.
 
 ![LRP netGra preview](preview.png)
