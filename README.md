@@ -18,14 +18,24 @@ The input graph file has to be formated properly.
         ]
     }
 
-# Running it
+# Installing it
 
 I am assuming you have NodeJS and Electron installed on your computer.
 
-Clone the repo, `cd` to it, then `npm start`
+clone the repo then `cd` into it.
+
+Install the three dependencies
+
+    npm install electron d3 fs --save-dev
+
+# Running it
+
+As long as you are still in the project directory, all you need to do is...
+
+ `npm start`
 
 That's it.
 
-Looks like this.
+If you've set it up properly (and you have a properly formatted graph) is should look like this.
 
 ![LRP netGra preview](preview.png)
