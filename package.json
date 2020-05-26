@@ -1,6 +1,6 @@
 {
   "name": "netGra",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Displays a simple network graph.",
   "main": "main.js",
   "scripts": {

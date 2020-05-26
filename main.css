@@ -1,8 +1,23 @@
+:root{
+  --red: rgb(255, 0, 127);
+  --green: rgb(127, 255, 0);
+  --blue: rgb(0, 127, 255);
+  --greytxt: rgb(50, 50, 50); 
+  --grey1: rgb(127, 127, 127);
+  --grey2: rgb(200, 200, 200);
+  --grey3: rgb(240, 240, 240);
+  --white: rgb(255, 255, 255);
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #777;
+    color: var(--grey1);
     padding: 0px;
     margin:0px;
+}
+
+.clearboth{
+    clear: both;
 }
 
 #container {
@@ -11,8 +26,8 @@ body {
 }
 
 #tophead{
-    background-color: #eee;
-    border-bottom: 1px solid #ccc;
+    background-color: var(--grey3);
+    border-bottom: 1px solid var(--grey2);
     height: 38px;
     display: flex;
     flex-direction: row;
@@ -25,15 +40,15 @@ body {
 }
 
 #graphcont{
-    background-color: white;
+    background-color: var(--white);
     height: 600px;
     width: 900px;
 }
 
 #botfoot{
-    background-color: #eee;
+    background-color: var(--grey3);
+    border-top: 1px solid var(--grey2);
     height: 38px;
-    border-top: 1px solid #ccc;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,5 +60,62 @@ body {
 }
 
 .gi {
-    color: #333;
+    color: var(--greytxt);
+}
+
+/* Graph stuff */
+
+#controlmenu{
+    position: fixed;
+    top: calc(20px + 38px);
+    left:20px;
+    overflow: hidden;
+    cursor: default;
+    height: 35px;
+    width: 30px;
+    border: var(--grey2) 1px solid;
+}
+
+.controlmenac {
+    width: 120px !important;
+    height: auto !important ;
+    overflow: visible !important;
+    padding: 0px !important;
+}
+
+#cind{
+    height: 18px;
+    padding: 10px;
+}
+
+.menite {
+    padding: 5px;
+    border-top: var(--grey2) 1px solid;
+}
+
+.menite:hover {
+    background-color: var(--grey3);
+}
+
+
+/* table with the node and link data */
+#nodedataw, #linkdataw {
+    visibility: hidden;
+    position: fixed;
+    left: 141px;
+    background-color: var(--grey3);
+    border: var(--grey2) 1px solid;
+    padding:10px;
+}
+
+#nodedataw {
+    top: 97px;
+}
+
+#linkdataw {
+    top: 126px;
+}
+
+.tabi{
+    text-align: right;
 }

@@ -11,7 +11,7 @@ The input graph file has to be formated properly.
             {"id": 0, "name": "node a"},
             {"id": 1, "name": "node b"},
             {"id": 2, "name": "node c"}
-        ];
+        ],
         "links": [
             {"source": 0, "target": 2}
             {"source": 2, "target": 3}
@@ -39,3 +39,9 @@ That's it.
 If you've set it up properly (and you have a properly formatted graph) it should look like this.
 
 ![LRP netGra preview](preview.png)
+
+## Updates
+
+### v1.0.1
+
+Added a simple density measurement to the graph.

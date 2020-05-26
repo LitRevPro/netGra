@@ -12,11 +12,19 @@
             <div>File: <span  id="graphtitle" class="gi"></span></div>
         </div>
 
-        <div id="graphcont"><svg id="maingraph"></svg></div>
+        <div id="graphcont">
+            <div id="controlmenu">
+                <div id="cind"></div>
+            </div>
+            <div id="nodedataw"><table id="nodedatapoints"></table></div>
+            <div id="linkdataw"><table id="linkdatapoints"></table></div>
+            <svg id="maingraph"></svg>
+        </div>
         
         <div id="botfoot">
             <div class="gdata">Nodes: <span id="nodesnumb" class='gi'></span></div>
             <div class="gdata">Links: <span id="linksnumb" class="gi"></span></div>
+            <div class="gdata">Density: <span id="densnumb" class="gi"></span></div>
         </div>
 
     </div>
@@ -24,3 +32,4 @@
 </body>
 
 <script src="netgraph.js"></script>
+<script src="controlmenu.js"></script>

@@ -1,15 +1,24 @@
 const { dialog } = require('electron').remote;
 const fs = require('fs');
 const d3 = require('d3');
+
+// include local stuff
+const { density, degcent } = require('./ngutils/density.js');
+
 window.$ = window.jQuery = require('jquery');
 
 // open the dialog box to get the file path
-const filepath = dialog.showOpenDialogSync();
+//const filepath = dialog.showOpenDialogSync();
+//console.log(filepath);
+
+// for testing
+const filepath = ["/Users/jose/Desktop/graph-test/fullgraph_th2.json"]
 
 // read the localfile and parse data
 const rawdata = fs.readFileSync(filepath[0], 'utf-8');
 const data = JSON.parse(rawdata);
 
+// get the file name for title
 const filename = filepath[0].split(/(\\|\/)/g).pop();
 
 // set the title of the graph
@@ -19,9 +28,10 @@ $("#graphtitle").text(filename);
 // number of nodes and links for now, later to include density.
 $("#nodesnumb").text(data["nodes"].length);
 $("#linksnumb").text(data["links"].length);
+$("#densnumb").text(density(data));
 
 // pass data into constants
-const nodes = data['nodes'];
+const nodes = degcent(data);
 const links = data['links'];
 
 // declare the drag function settings
