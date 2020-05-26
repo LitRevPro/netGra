@@ -8,11 +8,10 @@ const { density, degcent } = require('./ngutils/density.js');
 window.$ = window.jQuery = require('jquery');
 
 // open the dialog box to get the file path
-//const filepath = dialog.showOpenDialogSync();
-//console.log(filepath);
+const filepath = dialog.showOpenDialogSync();
 
 // for testing
-const filepath = ["/Users/jose/Desktop/graph-test/fullgraph_th2.json"]
+// const filepath = ["/Users/jose/Desktop/graph-test/fullgraph_th2.json"]
 
 // read the localfile and parse data
 const rawdata = fs.readFileSync(filepath[0], 'utf-8');
