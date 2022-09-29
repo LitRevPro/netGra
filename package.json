@@ -9,7 +9,7 @@
   "author": "Jose Christian",
   "license": "MIT",
   "devDependencies": {
-    "d3": "^5.16.0",
+    "d3": "^7.6.1",
     "electron": "^9.0.0",
     "fs": "0.0.1-security",
     "jquery": "^3.5.1"
